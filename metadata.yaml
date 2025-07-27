@@ -15,5 +15,5 @@
 homepage: "https://tagpilot.io/"
 documentation: "https://docs.tagpilot.io/"
 versions:
-  - sha:
+  - sha: 00044c30d01e86ce36b5d9228ad6f0c294b48bf0
     changeNotes: Initial Version
