@@ -1,4 +1,4 @@
-﻿___TERMS_OF_SERVICE___
+___TERMS_OF_SERVICE___
 
 By creating or modifying this file you agree to Google Tag Manager's Community
 Template Gallery Developer Terms of Service available at
@@ -13,7 +13,7 @@ ___INFO___
   "id": "cvt_temp_public_id",
   "version": 1,
   "securityGroups": [],
-  "displayName": "Event UUID",
+  "displayName": "Unique Event ID",
   "description": "Ultra simple code to generate (UUID v7 like, but only numbers) IDs to deduplicate browser- and server-side events.",
   "containerContexts": [
     "WEB"
@@ -141,6 +141,7 @@ scenarios:
 
 ___NOTES___
 
-Created on 27/07/2025, 12:48:00
+
+
 
 
