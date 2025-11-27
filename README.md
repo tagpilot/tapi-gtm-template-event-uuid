@@ -1,6 +1,6 @@
-# Event UUID
+# Event UUID GTM Template
 
-Ultra simple code to generate IDs (a little like UUID v7) to deduplicate browser- and server-side events.
+Ultra simple code to generate Unique IDs (a little like UUID v7) to deduplicate browser-side and server-side events.
 
 Example value:
 
@@ -9,8 +9,7 @@ Example value:
 
 The first part of this pseudo-UUID is a timestamp which means the IDs are sortable, which is great for debugging.
 
-In order to ensure a variable base don this template keeps value when used in multiple tags it keeps the value in a template storage.
+Value persistence between different tags is achieved using a template storage.
 
-
-**Important:** using advanced tags sequencing may break the logic. Event if two tags are firing with the same trigger but one is set to fire before or after the other one it will be fired with different dataLayer state which will cause the ID to change.
+**Important:** using advanced tags sequencing may break the logic. Event if two tags are firing with the same trigger but one is set to fire before or after another one, it will be fired with different dataLayer state which will cause the ID to change.
 

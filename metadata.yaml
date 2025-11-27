@@ -1,4 +1,4 @@
-# Copyright 2024 Tag Concierge Sp. z o.o.
+# Copyright 2025 Tag Concierge Sp. z o.o.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,5 +15,5 @@
 homepage: "https://tagpilot.io/"
 documentation: "https://docs.tagpilot.io/"
 versions:
-  - sha: 00044c30d01e86ce36b5d9228ad6f0c294b48bf0
+  - sha: 353494ab476ab07fd5b67c862497deb961f9b4b3
     changeNotes: Initial Version
