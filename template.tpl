@@ -34,20 +34,20 @@ const t = require('getTimestampMillis');
 const g = require('generateRandom');
 const s = '-';
 
+const eventName = dl('event', 1) || 'unknown_event';
 const gt = dl('gtm.uniqueEventId', 1);
 
-if (ts.getItem(gt) !== null) {
-  return ts.getItem(gt);
-}
+const key = gt + '-' + eventName;
 
+if (ts.getItem(key) !== null) {
+  return ts.getItem(key);
+}
 
 function gr() { return g(100000, 999999); }
 
-const uniqueId = t() + s + [0, 0, 0, 0]
-  .map(gr)
-  .join(s);
+const uniqueId = t() + s + [0, 0, 0, 0].map(gr).join(s);
 
-ts.setItem(gt, uniqueId);
+ts.setItem(key, uniqueId);
 
 return uniqueId;
 
@@ -87,6 +87,10 @@ ___WEB_PERMISSIONS___
               {
                 "type": 1,
                 "string": "gtm.uniqueEventId"
+              },
+              {
+                "type": 1,
+                "string": "event"
               }
             ]
           }
